@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
+    <script src="script.js" defer>
+    </script>
 </head>
 <body>
 <div class="footer">
@@ -22,19 +24,19 @@
         </div>
         <div class="form-container">
             <div class="title-small">Forge Your Own Chains</div>
-            <div class="explanation"> <h1>Welcome to 'Forge Your Own Chains',</h1> <p>a community for fans of heavy, psychedelic music. Sign up to our mailing list to receive articles, reviews, news and updates on new releases.</p> </div>
+            <div class="explanation"> <h1>Welcome to <strong>Forge Your Own Chains</strong>,</h1> <p>a community for fans of heavy, psychedelic music. Sign up to our mailing list to receive articles, reviews, news and updates on new releases.</p> </div>
             <div class="form">
                 <form>
                     <div class="text-inputs">
-                            <div class="textinput"><label for="firstname">First Name</label> <input type="text" name="firstname" id="firstname"></div>
-                            <div class="textinput"><label for="lastname">Last Name</label><input type="text" name="lastname" id="lastname"></div>
-                            <div class="textinput"><label for="email">e-Mail</label><input type="email" name="email" id="email"></div>
+                            <div class="textinput"><label for="firstname">First Name</label> <input type="text" name="firstname" id="firstname" required /><span></span></div>
+                            <div class="textinput"><label for="lastname">Last Name</label><input type="text" name="lastname" id="lastname" required /><span></span></div>
+                            <div class="textinput"><label for="email">e-Mail</label><input type="email" name="email" id="email" required /><span></span></div>
                             <div class="textinput"><label for="phone-number">Phone Number</label><input type="tel" name="phone-number" id="phone-number"></div>
-                            <div class="textinput"><label for="password">Password</label><input type="password" name="password" id="password"></div>
-                            <div class="textinput"><label for="confirm">Confirm Password</label><input type="password" id="confirm"></div>
+                            <div class="textinput"><label for="password" >Password</label><input type="password" name="password" id="password" pattern="^(.{0,7}|[^0-9]*|[^A-Z]*|[^a-z]*|[a-zA-Z0-9]*)$" required /><span></span></div>
+                            <div class="textinput"><label for="confirm">Confirm Password</label><input type="password" id="confirm" required /><span></span></div>
                     </div>
                     <div class="button">
-                        <button type="submit" class="sign-up">Sign Up</button>
+                        <button type="submit" class="sign-up" id="submit">Sign Up</button>
                     </div>
                 </form>
             </div>
